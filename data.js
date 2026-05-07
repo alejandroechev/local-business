@@ -24,14 +24,14 @@ window.businessIdeas = [
     pros: [
       "Cero competencia en toda la Región de Los Lagos (800K+ habitantes)",
       "178 días de lluvia/año crean demanda cautiva de entretenimiento indoor",
-      "Mercado nacional creciendo al 12,77% anual (USD $24M → $72M para 2033)",
+      "Mercado nacional creciendo al 12,77% anual (US$24M → US$72M para 2033)",
       "Punto de equilibrio alcanzable incluso en invierno (30% ocupación)",
       "Temas locales únicos crean ventaja competitiva irreplicable"
     ],
     cons: [
       "Estacionalidad fuerte: 60-70% de ingresos en solo 5 meses (dic-mar + julio)",
-      "CAPEX alto para versión mid-range ($80K-$130K para 2 salas)",
-      "Las salas necesitan renovación cada 3-5 años ($15K-$30K por sala)",
+      "CAPEX alto para versión mid-range (CLP $77M-$125M para 2 salas)",
+      "Las salas necesitan renovación cada 3-5 años (CLP $14M-$29M por sala)",
       "Dificultad para encontrar personal bilingüe en la zona",
       "Se necesita reserva de caja para 6 meses de temporada baja"
     ],
@@ -55,7 +55,7 @@ window.businessIdeas = [
       { item: "Software (booking, contabilidad, POS, cámaras)", min: 129, max: 129 },
       { item: "Contabilidad y cumplimiento legal", min: 125, max: 125 }
     ],
-    revenueModel: "Precio promedio: CLP $15.000/persona (~$16 USD). Grupo promedio de 4 jugadores = CLP $60.000/sesión (~$63 USD). Máximo 5 sesiones/sala/día (10am-6pm), hasta 10 en temporada alta. 2 salas: capacidad de 10 juegos/día. Ingresos anuales estimados: $85.200 USD incluyendo corporativos y grupos. Temporada alta (dic-mar): 44% del ingreso anual. IVA del 19% incluido en el precio del ticket.",
+    revenueModel: "Precio promedio: CLP $15.000/persona. Grupo promedio de 4 jugadores = CLP $60.000/sesión. Máximo 5 sesiones/sala/día (10am-6pm), hasta 10 en temporada alta. 2 salas: capacidad de 10 juegos/día. Ingresos anuales estimados: ~CLP $82M incluyendo corporativos y grupos. Temporada alta (dic-mar): 44% del ingreso anual. IVA del 19% incluido en el precio del ticket.",
     localAngle: "Temas únicos de la zona sur que ningún competidor puede replicar: 'La Erupción' 🌋 — el Volcán Osorno en erupción, descifra datos sísmicos para evacuar (el volcán es visible desde la ciudad). 'El Caleuche' 👻 — mitología del barco fantasma de Chiloé, escapa antes de que se sumerja. 'La Colonia Alemana' 🏠 — colonos alemanes de 1853, resuelve puzzles del siglo XIX. Lanzamiento recomendado: La Erupción + El Caleuche.",
     references: [
       { name: "Escape Room Pucón", url: "https://www.escaperoompucon.com/", note: "Punto de referencia — actividad indoor #1 en Pucón, 5.0 estrellas" },
@@ -113,7 +113,7 @@ window.businessIdeas = [
       { item: "Servicios básicos y calefacción", min: 300, max: 450 },
       { item: "Marketing y eventos", min: 225, max: 500 }
     ],
-    revenueModel: "Entrada: CLP $4.000-$6.000/persona (~$4-6 USD). Consumo promedio F&B: ~CLP $5.000/persona. Eventos y torneos: CLP $25K-$40K/mesa. Ingreso anual estimado: $104K-$115K USD. El 55-65% proviene de alimentos y bebidas, no de la entrada. Noches temáticas y torneos impulsan tráfico en temporada baja.",
+    revenueModel: "Entrada: CLP $4.000-$6.000/persona. Consumo promedio F&B: ~CLP $5.000/persona. Eventos y torneos: CLP $25K-$40K/mesa. Ingreso anual estimado: ~CLP $100M-$110M. El 55-65% proviene de alimentos y bebidas, no de la entrada. Noches temáticas y torneos impulsan tráfico en temporada baja.",
     localAngle: "La herencia alemana de Puerto Varas es el diferenciador perfecto: los Eurogames (Catan, Agrícola, Puerto Rico) se originaron en Alemania. Menú inspirado en la gastronomía alemana-chilena (kuchen, strudel, cervezas artesanales locales). Noches temáticas: 'Noche de Colonos', torneos de Catan, sesiones de rol ambientadas en la Patagonia.",
     references: [
       { name: "Café 2D6 Santiago", url: "https://www.cafe2d6.cl/", note: "Ludoteca referente en Santiago, CLP $2.500 entrada" },
@@ -169,7 +169,7 @@ window.businessIdeas = [
       { item: "Reemplazo mensual de dianas", min: 200, max: 500 },
       { item: "Servicios básicos y marketing", min: 100, max: 800 }
     ],
-    revenueModel: "Precio por persona: CLP $12.000-$20.000/sesión (~$13-22 USD). Eventos grupales: CLP $150K-$250K. Potencial mensual a 40% de ocupación: ~$12K-$18K USD. Ingresos anuales estimados: ~$144.000 USD. Sesiones incluyen instrucción básica de coach + tiempo libre de práctica.",
+    revenueModel: "Precio por persona: CLP $12.000-$20.000/sesión. Eventos grupales: CLP $150K-$250K. Potencial mensual a 40% de ocupación: ~CLP $12M-$17M. Ingresos anuales estimados: ~CLP $138M. Sesiones incluyen instrucción básica de coach + tiempo libre de práctica.",
     localAngle: "La identidad de Puerto Varas como destino de turismo de aventura (kayak, trekking, volcanes) encaja con el lanzamiento de hachas como experiencia 'aventurera indoor'. Marketing como 'la aventura que no depende del clima'. Potencial para torneos regionales y ligas locales. Temática leñadora/pionera conecta con la historia colonizadora.",
     references: [
       { name: "Hacha México", url: "https://www.hachamexico.com.mx/", note: "Único referente de lanzamiento de hachas en Latinoamérica" },
@@ -202,7 +202,7 @@ window.businessIdeas = [
       "Experiencia inmersiva para días de lluvia"
     ],
     cons: [
-      "Obsolescencia tecnológica: equipos se renuevan cada 2-3 años ($15K-$30K por ciclo)",
+      "Obsolescencia tecnológica: equipos se renuevan cada 2-3 años (CLP $14M-$29M por ciclo)",
       "Meta Quest cuesta 20-30% más en Chile que en EEUU",
       "Alto mantenimiento técnico continuo",
       "Preocupaciones higiénicas con visores compartidos",
@@ -223,7 +223,7 @@ window.businessIdeas = [
       { item: "Reserva depreciación de equipos", min: 500, max: 1000 },
       { item: "Servicios básicos y marketing", min: 620, max: 1340 }
     ],
-    revenueModel: "Precio por sesión: CLP $12.000-$20.000 (~$13-22 USD). Paquetes de cumpleaños y corporativos premium. Potencial mensual a capacidad moderada: ~$10K-$13K USD. Ingreso anual estimado: ~$138.000 USD. Modelo lean con Quest es más accesible que free-roam ($92K-$216K).",
+    revenueModel: "Precio por sesión: CLP $12.000-$20.000. Paquetes de cumpleaños y corporativos premium. Potencial mensual a capacidad moderada: ~CLP $10M-$12M. Ingreso anual estimado: ~CLP $133M. Modelo lean con Quest es más accesible que free-roam (CLP $88M-$207M).",
     localAngle: "Experiencias VR temáticas de la zona: vuelo virtual sobre el Volcán Osorno, navegación por los canales de Chiloé, exploración de glaciares patagónicos. 'Aventura virtual cuando la aventura real no es posible por el clima'. Compatible con turistas de aventura que buscan experiencias complementarias.",
     references: [
       { name: "Lucid Dreams VR Santiago", url: "https://luciddreams.cl/", note: "Arcade VR referente en Chile, 260 m², free-roam" },
@@ -278,7 +278,7 @@ window.businessIdeas = [
       { item: "Mantenimiento de pistas y equipos", min: 300, max: 500 },
       { item: "Marketing", min: 420, max: 940 }
     ],
-    revenueModel: "Precio por persona: CLP $8.500-$13.000 (~$9-14 USD). Eventos corporativos: CLP $250K-$400K. Punto de equilibrio: 15-28 visitantes/día. Ingreso anual estimado: ~$90.000 USD. El desafío es llenar un espacio tan grande de forma consistente en un mercado pequeño.",
+    revenueModel: "Precio por persona: CLP $8.500-$13.000. Eventos corporativos: CLP $250K-$400K. Punto de equilibrio: 15-28 visitantes/día. Ingreso anual estimado: ~CLP $86M. El desafío es llenar un espacio tan grande de forma consistente en un mercado pequeño.",
     localAngle: "Temática volcánica fluorescente: hoyos diseñados como el cráter del Osorno, lagos de lava neón, cascadas UV. 'Mini Golf Volcánico' como marca. Potencial para combinar con café/bar y zona de arcade para maximizar el uso del gran espacio requerido.",
     references: [
       { name: "Goolfy Chile", url: "https://www.goolfychile.cl/", note: "Mini golf indoor fluorescente — 3 locales en Santiago" },
@@ -334,7 +334,7 @@ window.businessIdeas = [
       { item: "Marketing continuo", min: 500, max: 800 },
       { item: "Seguros y gastos legales", min: 200, max: 400 }
     ],
-    revenueModel: "Precio por persona (incluye cena): CLP $38.000-$75.000 (~$40-78 USD). 16 shows/mes × 24 cubiertos = potencial CLP $10M-$28M/mes. Ingreso anual estimado: ~$156.000 USD. El precio más alto de todos los conceptos. Shows especiales bilingües para turistas internacionales. Potencial para eventos corporativos premium.",
+    revenueModel: "Precio por persona (incluye cena): CLP $38.000-$75.000. 16 shows/mes × 24 cubiertos = potencial CLP $10M-$28M/mes. Ingreso anual estimado: ~CLP $150M. El precio más alto de todos los conceptos. Shows especiales bilingües para turistas internacionales. Potencial para eventos corporativos premium.",
     localAngle: "La herencia alemana de Puerto Varas es el diferenciador definitivo: 'Das Geheimnis der Colonia' — un misterio de asesinato ambientado en la colonia alemana de 1910. Personajes basados en familias fundadoras, conflictos entre colonos y comunidad local. El escenario histórico real (casonas alemanas, Club Alemán) añade autenticidad. Shows especiales en fechas clave: aniversario de la ciudad, Oktoberfest, Noche Valdiviana.",
     references: [
       { name: "CenaConCrimen (España)", url: "https://cenaconcrimen.com/", note: "Referente europeo de cenas con misterio" },
@@ -392,7 +392,7 @@ window.businessIdeas = [
       { item: "Seguros", min: 55, max: 130 },
       { item: "Limpieza, residuos y servicios básicos", min: 305, max: 515 }
     ],
-    revenueModel: "Precio: CLP $13.000-$20.000/persona/15 min (~$14-21 USD). 2 salas a 50% de ocupación: ~$3.200-$3.750 USD/mes. Ingreso anual estimado: ~$42.000 USD. El techo de ingresos bajo hace que funcione mejor como ADD-ON a un escape room u otro negocio (modelo 60 No More). Paquetes combo con escape room aumentan ticket promedio.",
+    revenueModel: "Precio: CLP $13.000-$20.000/persona/15 min. 2 salas a 50% de ocupación: ~CLP $3M-$3,6M/mes. Ingreso anual estimado: ~CLP $40M. El techo de ingresos bajo hace que funcione mejor como ADD-ON a un escape room u otro negocio (modelo 60 No More). Paquetes combo con escape room aumentan ticket promedio.",
     localAngle: "Marketing como liberación de estrés post-aventura: 'Escalaste el volcán, ahora destruye algo'. Temática sureña: destruir leña decorativa, cerámicas con motivos locales. Combinar con escape room para paquete completo de entretenimiento. Ideal como complemento en un centro de entretenimiento integral.",
     references: [
       { name: "60 No More Santiago", url: "https://www.instagram.com/60nomoreescaperoom/", note: "Pionero en Chile desde 2019 — rage room DENTRO de escape room (valida combo)" },
@@ -448,7 +448,7 @@ window.businessIdeas = [
       { item: "Electricidad del horno", min: 87, max: 196 },
       { item: "Marketing y otros gastos", min: 183, max: 454 }
     ],
-    revenueModel: "Pintura de bisque (taza/plato): CLP $18K-$22K ($19-23 USD). Clase de torno introductoria: CLP $28K-$35K ($29-37 USD). Clases mensuales: CLP $90K-$130K. Eventos privados y corporativos. Potencial mensual: ~$2.900-$3.500 USD. Ingreso anual estimado: ~$38.400 USD. El souvenir hecho a mano tiene alto valor percibido para turistas.",
+    revenueModel: "Pintura de bisque (taza/plato): CLP $18K-$22K. Clase de torno introductoria: CLP $28K-$35K. Clases mensuales: CLP $90K-$130K. Eventos privados y corporativos. Potencial mensual: ~CLP $2,8M-$3,4M. Ingreso anual estimado: ~CLP $37M. El souvenir hecho a mano tiene alto valor percibido para turistas.",
     localAngle: "Temática inspirada en la naturaleza del sur: pintar volcanes, lagos, bosques nativos en cerámica. Talleres especiales: 'Cerámica y Vino con vista al lago', talleres al aire libre en verano. Conexión con la tradición de greda chilena y artesanía mapuche (con respeto cultural). Productos terminados como souvenirs premium de Puerto Varas.",
     references: [
       { name: "K-Ro Cerámica Santiago", url: "https://karoceramica.cl/", note: "Referente chileno: CLP $35K/clase, CLP $130K/mes de clases" },
@@ -504,7 +504,7 @@ window.businessIdeas = [
       { item: "Seguros deportivos", min: 200, max: 400 },
       { item: "Servicios básicos y marketing", min: 310, max: 430 }
     ],
-    revenueModel: "Pase diario: CLP $4.500-$7.000 ($5-7 USD). Membresía mensual: CLP $22K-$35K ($23-37 USD). Clases y fiestas de cumpleaños como ingreso extra. Punto de equilibrio: ~120 membresías + 200 pases diarios/mes. Ingreso anual estimado: ~$72.000 USD. El 70-80% proviene de membresías locales, no turismo.",
+    revenueModel: "Pase diario: CLP $4.500-$7.000. Membresía mensual: CLP $22K-$35K. Clases y fiestas de cumpleaños como ingreso extra. Punto de equilibrio: ~120 membresías + 200 pases diarios/mes. Ingreso anual estimado: ~CLP $69M. El 70-80% proviene de membresías locales, no turismo.",
     localAngle: "Puerto Varas es capital de turismo de aventura del sur de Chile. 'Cuando llueve, escalamos adentro.' Conexión natural con Club Andino y comunidad de escalada outdoor. Competencias de boulder como eventos sociales. Colaboración con tour operators para ofrecer escalada indoor como plan B en días de mal clima.",
     references: [
       { name: "Casa Boulder Santiago", url: "https://casaboulder.cl/", note: "Referente de boulder en Chile" },
@@ -529,7 +529,7 @@ window.businessIdeas = [
     revenueAnnual: 56400,
     breakeven: "800-1.000 juegos/semana (vs. promedio global Zone de 1.500)",
     payback: "4–5 años",
-    summary: "Arena indoor de laser tag con sistema de 20+ chalecos, iluminación UV, máquinas de humo y arena temática. Verdadero atractivo familiar (7+ años) e imán de fiestas de cumpleaños. El equipamiento dura 10-30+ años. El problema: excede significativamente el presupuesto ($100K mínimo) y necesita un espacio masivo de 300-550 m².",
+    summary: "Arena indoor de laser tag con sistema de 20+ chalecos, iluminación UV, máquinas de humo y arena temática. Verdadero atractivo familiar (7+ años) e imán de fiestas de cumpleaños. El equipamiento dura 10-30+ años. El problema: excede significativamente el presupuesto (CLP $96M mínimo) y necesita un espacio masivo de 300-550 m².",
     pros: [
       "Verdadero atractivo familiar para todas las edades (7+)",
       "Imán de fiestas de cumpleaños",
@@ -538,7 +538,7 @@ window.businessIdeas = [
       "Género neutral — amplio mercado"
     ],
     cons: [
-      "CAPEX excede significativamente el presupuesto ($100K mínimo según Zone)",
+      "CAPEX excede significativamente el presupuesto (CLP $96M mínimo según Zone)",
       "Espacio masivo necesario: 300-550 m² total",
       "Equipamiento debe importarse de Australia",
       "Precio por juego bajo limita ingresos en mercado pequeño",
@@ -560,10 +560,10 @@ window.businessIdeas = [
       { item: "Mantenimiento de equipos", min: 200, max: 400 },
       { item: "Marketing", min: 280, max: 450 }
     ],
-    revenueModel: "Precio por juego: CLP $5.000-$10.000 ($5-10 USD). Fiestas de cumpleaños: CLP $120K-$200K. Benchmark Zone: 1.500 juegos/semana promedio global; realista para Puerto Varas: 500-800/semana. Potencial mensual conservador: $3.600-$5.800 USD. Ingreso anual estimado: ~$56.400 USD.",
+    revenueModel: "Precio por juego: CLP $5.000-$10.000. Fiestas de cumpleaños: CLP $120K-$200K. Benchmark Zone: 1.500 juegos/semana promedio global; realista para Puerto Varas: 500-800/semana. Potencial mensual conservador: CLP $3,5M-$5,6M. Ingreso anual estimado: ~CLP $54M.",
     localAngle: "Arena temática de 'Exploración Patagónica' o 'Batalla del Volcán'. Fiestas de cumpleaños como servicio principal — Puerto Varas carece de opciones indoor para celebraciones infantiles. Paquetes para grupos escolares en excursiones. Combinación natural con otros conceptos de entretenimiento en un centro multifuncional.",
     references: [
-      { name: "Zone Laser Tag", url: "https://lasertag.com/", note: "Red global de 950+ sites — confirma $100K mínimo de CAPEX" },
+      { name: "Zone Laser Tag", url: "https://lasertag.com/", note: "Red global de 950+ sites — confirma CLP $96M mínimo de CAPEX" },
       { name: "Laser Game Chile", url: "https://www.lasergame.cl/", note: "Operador chileno de laser tag (Santiago)" }
     ]
   },
@@ -614,7 +614,7 @@ window.businessIdeas = [
       { item: "Servicios básicos y calefacción", min: 400, max: 700 },
       { item: "Marketing y otros", min: 800, max: 1800 }
     ],
-    revenueModel: "Café: CLP $2.400-$3.900. Postres/kuchen: CLP $3.500-$5.900. Almuerzos: CLP $9.000-$14.000. Cat café agrega CLP $5.000 de reserva. Ingreso anual estimado: ~$144.000 USD. El 55-65% proviene de alimentos y bebidas. La diferenciación temática justifica precios superiores al café promedio.",
+    revenueModel: "Café: CLP $2.400-$3.900. Postres/kuchen: CLP $3.500-$5.900. Almuerzos: CLP $9.000-$14.000. Cat café agrega CLP $5.000 de reserva. Ingreso anual estimado: ~CLP $138M. El 55-65% proviene de alimentos y bebidas. La diferenciación temática justifica precios superiores al café promedio.",
     localAngle: "Temática de 'Explorador Patagónico': mapas antiguos, equipo de expedición vintage, fotos históricas de exploración del sur de Chile. Menú inspirado en cocina de expedición con toques locales. Incluir biblioteca de juegos de mesa como diferenciador. Evitar completamente la temática alemana — 140 años de Club Alemán es imbatible en ese nicho.",
     references: [
       { name: "El Café Rosa", url: "https://www.instagram.com/elcaferosachile/", note: "Café temático viral en Puerto Montt — prueba modelo regional" },
@@ -648,7 +648,7 @@ window.businessIdeas = [
     ],
     cons: [
       "Comunidad de nómadas digitales calificada 4/10 (nomadlio)",
-      "Ingresos de cowork solos son delgados ($1.500-$3.000 de membresías)",
+      "Ingresos de cowork solos son delgados (CLP $1,4M-$2,9M de membresías)",
       "Necesita masa crítica de 20+ miembros",
       "Compite con La Cima (24/7) y La Grey (café-cowork, vistas al lago)",
       "Puerto Varas puede ser mercado demasiado pequeño para cowork puro"
@@ -669,7 +669,7 @@ window.businessIdeas = [
       { item: "Electricidad y calefacción", min: 400, max: 700 },
       { item: "Marketing, comunidad y otros", min: 1050, max: 2100 }
     ],
-    revenueModel: "Hot desk: CLP $96K-$144K/mes ($100-150 USD). Pase diario: CLP $11.5K-$17.3K ($12-18 USD). Salas de reunión: CLP $14.4K-$24K/hora ($15-25 USD). Entretenimiento nocturno: $8-15/persona. Potencial mensual: $9.500-$34.000. Ingreso anual estimado conservador: ~$114.000 USD.",
+    revenueModel: "Hot desk: CLP $96K-$144K/mes. Pase diario: CLP $11.5K-$17.3K. Salas de reunión: CLP $14.4K-$24K/hora. Entretenimiento nocturno: CLP $7.700-$14.400/persona. Potencial mensual: CLP $9M-$33M. Ingreso anual estimado conservador: ~CLP $109M.",
     localAngle: "Puerto Varas como 'hub de trabajo remoto del sur de Chile'. Conexión con la creciente comunidad de nómadas digitales que eligen ciudades con naturaleza. Eventos nocturnos temáticos: noches de networking, meetups tech, game nights. Alianza con hostales y Airbnbs para ofrecer pases de cowork a huéspedes. Panorámica del lago como diferenciador si se logra buena ubicación.",
     references: [
       { name: "La Grey Puerto Varas", url: "https://www.instagram.com/lagrey.cl/", note: "Café-cowork-yoga-arte en Puerto Varas — cierra 9:30pm" },
@@ -694,7 +694,7 @@ window.businessIdeas = [
     revenueAnnual: 88200,
     breakeven: "3 sesiones/semana con 12 personas",
     payback: "3–6 meses",
-    summary: "Sesiones guiadas de pintura de 2-3 horas con vino, materiales incluidos, te llevas tu cuadro. No requiere habilidad. SEGUNDO CAPEX MÁS BAJO de los 15 conceptos ($6.200 para empezar). 'Pinta el Volcán Osorno con vino chileno' es una experiencia turística que se vende sola. Cero competencia en Puerto Varas. Operable por 1 persona. El mejor ratio riesgo/retorno de todas las opciones.",
+    summary: "Sesiones guiadas de pintura de 2-3 horas con vino, materiales incluidos, te llevas tu cuadro. No requiere habilidad. SEGUNDO CAPEX MÁS BAJO de los 15 conceptos (CLP $6M para empezar). 'Pinta el Volcán Osorno con vino chileno' es una experiencia turística que se vende sola. Cero competencia en Puerto Varas. Operable por 1 persona. El mejor ratio riesgo/retorno de todas las opciones.",
     pros: [
       "CAPEX y OPEX ultra bajos — puedes empezar literalmente el próximo mes",
       "Souvenir para llevar ('Pinté el Volcán Osorno') = marketing boca a boca poderoso",
@@ -725,7 +725,7 @@ window.businessIdeas = [
       { item: "Marketing", min: 100, max: 250 },
       { item: "Servicios básicos", min: 180, max: 350 }
     ],
-    revenueModel: "Sesión de pintura con vino: CLP $20.000-$35.000/persona (~$21-37 USD). Eventos privados: CLP $350K-$600K. Corporativos: CLP $700K-$1.5M. Potencial mensual: ~$5.200-$9.500. Ingreso anual estimado: ~$88.200 USD. Maridaje con vinos locales del Valle del Maule y Biobío eleva la experiencia.",
+    revenueModel: "Sesión de pintura con vino: CLP $20.000-$35.000/persona. Eventos privados: CLP $350K-$600K. Corporativos: CLP $700K-$1.5M. Potencial mensual: ~CLP $5M-$9M. Ingreso anual estimado: ~CLP $85M. Maridaje con vinos locales del Valle del Maule y Biobío eleva la experiencia.",
     localAngle: "'Pinta el Volcán Osorno con vino chileno' — experiencia turística que se vende sola. Talleres al aire libre en verano con vista al volcán. Maridaje con vinos del sur de Chile y cervezas artesanales locales. Talleres especiales: acuarelas del lago Llanquihue, paisajes patagónicos. Colaboración con hoteles y Airbnb para experiencias exclusivas para huéspedes.",
     references: [
       { name: "Grand Atelier Santiago", url: "https://www.instagram.com/grandatelier.santiago/", note: "Referente chileno — CLP $40K/sesión de 4 horas, CLP $85K/mes" },
@@ -768,7 +768,7 @@ window.businessIdeas = [
     ],
     competition: "Ningún karaoke privado en el sur de Chile. K-BOX (Santiago, 8 salas, abrió 2026, CLP $28.9K-$59.9K/hora). Sala Portugal (Santiago, karaoke tradicional de piso abierto, CLP $20K-$60K entrada). Puerto Montt tiene bares de karaoke tradicional pero no salas privadas.",
     capexBreakdown: [
-      { item: "Insonorización (4-6 salas, $2K-$5K c/u)", min: 8000, max: 30000 },
+      { item: "Insonorización (4-6 salas, CLP $1,9M-$4,8M c/u)", min: 8000, max: 30000 },
       { item: "Equipos de audio y video por sala", min: 6000, max: 15000 },
       { item: "Mobiliario por sala", min: 3000, max: 8000 },
       { item: "Sistema de tablets y software de karaoke", min: 2000, max: 5000 },
@@ -783,7 +783,7 @@ window.businessIdeas = [
       { item: "Licencias de música y software", min: 150, max: 300 },
       { item: "Marketing", min: 150, max: 350 }
     ],
-    revenueModel: "Sala pequeña (2-4 pax): CLP $20K-$38K/hora (~$21-40 USD). Sala grande (6-10 pax): CLP $32K-$60K/hora (~$33-63 USD). Benchmark: K-BOX Santiago CLP $28.9K-$59.9K/hr. A 50% de ocupación: ~$8K-$14K/mes + F&B. Ingreso anual estimado: ~$132.000 USD. Fiestas y eventos corporativos son ingreso premium.",
+    revenueModel: "Sala pequeña (2-4 pax): CLP $20K-$38K/hora. Sala grande (6-10 pax): CLP $32K-$60K/hora. Benchmark: K-BOX Santiago CLP $28.9K-$59.9K/hr. A 50% de ocupación: ~CLP $8M-$13M/mes + F&B. Ingreso anual estimado: ~CLP $127M. Fiestas y eventos corporativos son ingreso premium.",
     localAngle: "Salas temáticas: 'Sala Volcánica' (decoración de lava y fuego), 'Sala Lago Llanquihue' (azul y naturaleza), 'Sala Cervecera' (temática de cerveza artesanal local). Noches especiales: karaoke en alemán por herencia, noches de ranchera, K-pop nights. Paquetes de cumpleaños como servicio estrella. Conexión con la vida nocturna — Puerto Varas carece de opciones después de las 10pm.",
     references: [
       { name: "K-BOX Santiago", url: "https://www.instagram.com/kbox_santiago/", note: "8 salas privadas, abrió 2026 — CLP $28.9K-$59.9K/hora" },
@@ -824,7 +824,7 @@ window.businessIdeas = [
       "Puede parecer demasiado simple para algunos clientes",
       "Menos 'viral' que experiencias inmersivas"
     ],
-    competition: "Ninguno encontrado en Chile. FUGA Escape Room (Santiago, CLP $15K-$19K) y Escape Room Chile (Talca) son la categoría más cercana pero modelo diferente. Boda Borg (EEUU/Europa, $25-35/persona) es el referente internacional del concepto de puzzle rooms grupales.",
+    competition: "Ninguno encontrado en Chile. FUGA Escape Room (Santiago, CLP $15K-$19K) y Escape Room Chile (Talca) son la categoría más cercana pero modelo diferente. Boda Borg (EEUU/Europa, CLP $24K-$34K/persona) es el referente internacional del concepto de puzzle rooms grupales.",
     capexBreakdown: [
       { item: "Puzzles y juegos mecánicos (50-80 unidades)", min: 2000, max: 6000 },
       { item: "Mobiliario (mesas, estantes, sillas)", min: 2300, max: 5500 },
@@ -839,11 +839,11 @@ window.businessIdeas = [
       { item: "Reposición de puzzles", min: 100, max: 300 },
       { item: "Marketing y otros", min: 360, max: 670 }
     ],
-    revenueModel: "Entrada: CLP $8.000-$18.000/persona ($8-19 USD). Grupos escolares: CLP $6K-$9K/estudiante. Eventos privados: CLP $180K-$350K. A 50% de capacidad (30-60 pax simultáneos): ~$12.600-$18.900/mes. Ingreso anual estimado: ~$126.000 USD. Mayor throughput de todos los conceptos.",
+    revenueModel: "Entrada: CLP $8.000-$18.000/persona. Grupos escolares: CLP $6K-$9K/estudiante. Eventos privados: CLP $180K-$350K. A 50% de capacidad (30-60 pax simultáneos): ~CLP $12M-$18M/mes. Ingreso anual estimado: ~CLP $121M. Mayor throughput de todos los conceptos.",
     localAngle: "Puzzles temáticos de la zona: resolver el misterio del Volcán Osorno, descifrar códigos mapuches (con colaboración cultural), navegación del Lago Llanquihue. Espacio compartido con escape room = cross-selling natural. Walk-in ideal para turistas que pasan por Puerto Varas sin reserva previa. Competencias y rankings semanales para fidelizar locales.",
     references: [
       { name: "Boda Borg", url: "https://www.bodaborg.com/", note: "Concepto de puzzle rooms grupales — referente mundial" },
-      { name: "Boda Borg Boston", url: "https://www.bodaborg.com/boston/", note: "Ubicación en EEUU — $25-35/persona, alta repetición" }
+      { name: "Boda Borg Boston", url: "https://www.bodaborg.com/boston/", note: "Ubicación en EEUU — CLP $24K-$34K/persona, alta repetición" }
     ]
   }
 ];
