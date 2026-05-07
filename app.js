@@ -35,6 +35,8 @@ function applySort(ideas, criteria) {
       return copy.sort((a, b) => (b.capexMid || 0) - (a.capexMid || 0));
     case 'revenue':
       return copy.sort((a, b) => (b.revenueAnnual || 0) - (a.revenueAnnual || 0));
+    case 'opex-asc':
+      return copy.sort((a, b) => ((a.opexMin + a.opexMax) / 2) - ((b.opexMin + b.opexMax) / 2));
     default:
       return copy;
   }
