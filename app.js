@@ -4,6 +4,25 @@ let currentCategory = 'all';
 let currentSearch = '';
 
 // ── Formatting ────────────────────────────────────────────────────────────────
+const CLP_RATE = 960;
+
+function formatCLP(value) {
+  if (value == null || isNaN(value)) return '—';
+  const clp = Math.round(value * CLP_RATE);
+  if (clp >= 1_000_000_000) return `$${+(clp / 1_000_000_000).toFixed(1)}B CLP`;
+  if (clp >= 1_000_000) return `$${+(clp / 1_000_000).toFixed(0)}M CLP`;
+  if (clp >= 1_000) return `$${+(clp / 1_000).toFixed(0)}K CLP`;
+  return `$${clp} CLP`;
+}
+
+function formatCLPRange(min, max) {
+  if (min == null && max == null) return '—';
+  if (min === max || max == null) return formatCLP(min);
+  if (min == null) return formatCLP(max);
+  return `${formatCLP(min)} - ${formatCLP(max)}`;
+}
+
+// Keep USD formatting for internal use (sorting labels etc)
 function formatCurrency(value) {
   if (value == null || isNaN(value)) return '—';
   if (value >= 1_000_000) return `$${+(value / 1_000_000).toFixed(1)}M`;
@@ -19,8 +38,11 @@ function formatRange(min, max) {
 }
 
 function renderStars(feasibility) {
-  const n = Math.max(0, Math.min(5, feasibility || 0));
-  return '⭐'.repeat(n) + '☆'.repeat(5 - n);
+  const val = Math.max(0, Math.min(5, feasibility || 0));
+  const full = Math.floor(val);
+  const half = val % 1 >= 0.5 ? 1 : 0;
+  const empty = 5 - full - half;
+  return '⭐'.repeat(full) + (half ? '🌟' : '') + '☆'.repeat(empty);
 }
 
 // ── Sorting & Filtering ──────────────────────────────────────────────────────
@@ -75,8 +97,8 @@ function renderBreakdownTable(rows, labelCol, minCol, maxCol) {
         ${rows.map(r => `
           <tr>
             <td>${r.item || '—'}</td>
-            <td>${formatCurrency(r.min)}</td>
-            <td>${formatCurrency(r.max)}</td>
+            <td>${formatCLP(r.min)}</td>
+            <td>${formatCLP(r.max)}</td>
           </tr>`).join('')}
       </tbody>
     </table>`;
@@ -203,15 +225,15 @@ function renderCards(ideas) {
         <div class="card-metrics">
           <div class="metric">
             <span class="metric-label">CAPEX</span>
-            <span class="metric-value">${formatRange(idea.capexMin, idea.capexMax)}</span>
+            <span class="metric-value">${formatCLPRange(idea.capexMin, idea.capexMax)}</span>
           </div>
           <div class="metric">
             <span class="metric-label">OPEX/mes</span>
-            <span class="metric-value">${formatRange(idea.opexMin, idea.opexMax)}</span>
+            <span class="metric-value">${formatCLPRange(idea.opexMin, idea.opexMax)}</span>
           </div>
           <div class="metric">
             <span class="metric-label">Ingreso anual</span>
-            <span class="metric-value">~${formatCurrency(idea.revenueAnnual)}</span>
+            <span class="metric-value">~${formatCLP(idea.revenueAnnual)}</span>
           </div>
         </div>
         <p class="card-summary-text">${idea.summary || ''}</p>
@@ -293,7 +315,7 @@ function renderCombos() {
       ? combo.phases.map(p => `
           <div class="combo-phase">
             <span class="combo-phase-year">Año ${p.year}</span>
-            <span class="combo-phase-invest">${formatCurrency(p.investment)}</span>
+            <span class="combo-phase-invest">${formatCLP(p.investment)}</span>
             <span class="combo-phase-items">${p.items}</span>
           </div>`).join('')
       : '';
@@ -311,7 +333,7 @@ function renderCombos() {
         </div>
         <div class="combo-capex">
           <span class="metric-label">Inversión total</span>
-          <span class="metric-value">${formatCurrency(combo.totalCapex)}</span>
+          <span class="metric-value">${formatCLP(combo.totalCapex)}</span>
         </div>
         <p class="combo-businesses">${businessNames}</p>
         <p class="combo-description">${combo.description}</p>

@@ -37,7 +37,7 @@
     </div>
   </section>
 
-  <!-- CONTROLS: Sort, Filter, Search -->
+  <!-- CONTROLS: Sort & Search -->
   <section class="controls">
     <div class="container">
       <div class="controls-row">
@@ -50,18 +50,24 @@
           <button class="sort-btn active" data-sort="feasibility" onclick="sortCards('feasibility')">⭐ Factibilidad</button>
           <button class="sort-btn" data-sort="capex-asc" onclick="sortCards('capex-asc')">💰 CAPEX ↑</button>
           <button class="sort-btn" data-sort="capex-desc" onclick="sortCards('capex-desc')">💰 CAPEX ↓</button>
-          <button class="sort-btn" data-sort="revenue" onclick="sortCards('revenue')">📈 Ingresos</button>
           <button class="sort-btn" data-sort="opex-asc" onclick="sortCards('opex-asc')">💸 OPEX ↑</button>
+          <button class="sort-btn" data-sort="revenue" onclick="sortCards('revenue')">📈 Ingresos</button>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="filter-controls">
-          <button class="filter-pill active" data-category="all" onclick="filterCards('all')">Todas</button>
-          <button class="filter-pill" data-category="entretenimiento" onclick="filterCards('entretenimiento')">🎮 Entretenimiento</button>
-          <button class="filter-pill" data-category="gastronomía" onclick="filterCards('gastronomía')">🍽️ Gastronomía</button>
-          <button class="filter-pill" data-category="arte" onclick="filterCards('arte')">🎨 Arte</button>
-          <button class="filter-pill" data-category="fitness" onclick="filterCards('fitness')">💪 Fitness</button>
-          <button class="filter-pill" data-category="servicios" onclick="filterCards('servicios')">💼 Servicios</button>
-        </div>
+  <!-- FILTER: Categories -->
+  <section class="filters-bar">
+    <div class="container">
+      <div class="filter-controls">
+        <label>Filtrar:</label>
+        <button class="filter-pill active" data-category="all" onclick="filterCards('all')">Todas</button>
+        <button class="filter-pill" data-category="entretenimiento" onclick="filterCards('entretenimiento')">🎮 Entretenimiento</button>
+        <button class="filter-pill" data-category="gastronomía" onclick="filterCards('gastronomía')">🍽️ Gastronomía</button>
+        <button class="filter-pill" data-category="arte" onclick="filterCards('arte')">🎨 Arte</button>
+        <button class="filter-pill" data-category="fitness" onclick="filterCards('fitness')">💪 Fitness</button>
+        <button class="filter-pill" data-category="servicios" onclick="filterCards('servicios')">💼 Servicios</button>
       </div>
     </div>
   </section>
