@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Negocios Indoor — Puerto Varas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <h1>🏔️ Ideas de Negocio Indoor</h1>
+      <h2>Puerto Varas, Chile</h2>
+      <p class="hero-subtitle">Estudio de factibilidad para actividades de entretenimiento indoor en una ciudad turística con 178 días de lluvia al año</p>
+
+      <div class="hero-stats">
+        <div class="stat-badge">
+          <span class="stat-number">15</span>
+          <span class="stat-label">Ideas analizadas</span>
+        </div>
+        <div class="stat-badge">
+          <span class="stat-number">178</span>
+          <span class="stat-label">Días de lluvia/año</span>
+        </div>
+        <div class="stat-badge">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Competencia en la región</span>
+        </div>
+        <div class="stat-badge">
+          <span class="stat-number">300K+</span>
+          <span class="stat-label">Mercado potencial</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTROLS: Sort, Filter, Search -->
+  <section class="controls">
+    <div class="container">
+      <div class="controls-row">
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="🔍 Buscar idea..." oninput="searchCards(this.value)">
+        </div>
+
+        <div class="sort-controls">
+          <label>Ordenar:</label>
+          <button class="sort-btn active" data-sort="feasibility" onclick="sortCards('feasibility')">⭐ Factibilidad</button>
+          <button class="sort-btn" data-sort="capex-asc" onclick="sortCards('capex-asc')">💰 CAPEX ↑</button>
+          <button class="sort-btn" data-sort="capex-desc" onclick="sortCards('capex-desc')">💰 CAPEX ↓</button>
+          <button class="sort-btn" data-sort="revenue" onclick="sortCards('revenue')">📈 Ingresos</button>
+        </div>
+
+        <div class="filter-controls">
+          <button class="filter-pill active" data-category="all" onclick="filterCards('all')">Todas</button>
+          <button class="filter-pill" data-category="entretenimiento" onclick="filterCards('entretenimiento')">🎮 Entretenimiento</button>
+          <button class="filter-pill" data-category="gastronomía" onclick="filterCards('gastronomía')">🍽️ Gastronomía</button>
+          <button class="filter-pill" data-category="arte" onclick="filterCards('arte')">🎨 Arte</button>
+          <button class="filter-pill" data-category="fitness" onclick="filterCards('fitness')">💪 Fitness</button>
+          <button class="filter-pill" data-category="servicios" onclick="filterCards('servicios')">💼 Servicios</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDS GRID (rendered by app.js) -->
+  <main class="container">
+    <div id="cards-grid" class="cards-grid">
+      <!-- Cards are injected here by app.js renderCards() -->
+    </div>
+  </main>
+
+  <!-- COMBO OPPORTUNITIES SECTION -->
+  <section class="combos" id="combos">
+    <div class="container">
+      <h2>🔗 Oportunidades de Combo</h2>
+      <p class="section-subtitle">Negocios que se complementan y pueden compartir espacio, personal y marketing</p>
+      <div id="combos-grid" class="combos-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEXT SECTION: Why Puerto Varas -->
+  <section class="context">
+    <div class="container">
+      <h2>📍 ¿Por qué Puerto Varas?</h2>
+      <div class="context-grid">
+        <div class="context-card">
+          <h3>🌧️ 178 días de lluvia</h3>
+          <p>De mayo a agosto hay 12+ días lluviosos por mes. Los turistas y locales buscan actividades indoor y no hay opciones.</p>
+        </div>
+        <div class="context-card">
+          <h3>🏔️ Destino turístico top</h3>
+          <p>200.000-400.000 turistas anuales + 45.000 residentes + 250.000 en Puerto Montt (30 min).</p>
+        </div>
+        <div class="context-card">
+          <h3>🇩🇪 Herencia alemana única</h3>
+          <p>Cultura de juegos de mesa, gastronomía y arquitectura que permite temáticas únicas imposibles de copiar.</p>
+        </div>
+        <div class="context-card">
+          <h3>🚀 Cero competencia</h3>
+          <p>NINGUNA de las 15 ideas tiene competencia en toda la Región de Los Lagos (~800.000 personas).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Investigación realizada en Mayo 2026 · Tipo de cambio: 1 USD ≈ 960 CLP</p>
+      <p>Datos recopilados de múltiples fuentes: SERNATUR, INE, SII Chile, TripAdvisor, estudios de mercado</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button id="scroll-top" class="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Volver arriba">↑</button>
+
+  <!-- Scripts (order matters: data first, then app) -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
