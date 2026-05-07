@@ -215,7 +215,7 @@ function renderCards(ideas) {
   grid.innerHTML = ideas.map(idea => {
     const expanded = idea.expanded ? ' card--expanded' : '';
     return `
-    <div class="card${expanded}" data-id="${idea.id}" onclick="toggleCard('${idea.id}')">
+    <div class="card${expanded}" data-id="${idea.id}">
       <div class="card-summary">
         <div class="card-header">
           <span class="card-emoji">${idea.emoji || '💡'}</span>
@@ -254,25 +254,53 @@ function toggleCard(id) {
 
   const wasExpanded = target.expanded;
 
-  // Collapse all cards (accordion)
-  ideas.forEach(i => { i.expanded = false; });
+  // Collapse all other cards in DOM directly
+  ideas.forEach(i => {
+    if (i.id !== id && i.expanded) {
+      i.expanded = false;
+      const otherCard = document.querySelector(`.card[data-id="${i.id}"]`);
+      if (otherCard) {
+        otherCard.classList.remove('card--expanded');
+        const otherDetail = otherCard.querySelector('.card-detail');
+        if (otherDetail) otherDetail.innerHTML = '';
+        const otherBtn = otherCard.querySelector('.btn-expand');
+        if (otherBtn) otherBtn.textContent = 'Ver más ▼';
+      }
+    }
+  });
 
   // Toggle the clicked card
+  const cardEl = document.querySelector(`.card[data-id="${id}"]`);
+  if (!cardEl) return;
+
   if (!wasExpanded) {
     target.expanded = true;
-    window.location.hash = id;
-  } else {
-    history.replaceState(null, '', window.location.pathname + window.location.search);
-  }
-
-  renderCards(getVisibleIdeas());
-
-  // Smooth-scroll to expanded card
-  if (target.expanded) {
+    // Inject detail content FIRST
+    const detailEl = cardEl.querySelector('.card-detail');
+    if (detailEl) detailEl.innerHTML = renderDetail(target);
+    // Then add class to trigger CSS transition
     requestAnimationFrame(() => {
-      const el = document.querySelector(`.card[data-id="${id}"]`);
-      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      cardEl.classList.add('card--expanded');
     });
+    const btn = cardEl.querySelector('.btn-expand');
+    if (btn) btn.textContent = 'Ver menos ▲';
+    window.location.hash = id;
+
+    // Smooth-scroll to card
+    requestAnimationFrame(() => {
+      cardEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  } else {
+    target.expanded = false;
+    cardEl.classList.remove('card--expanded');
+    // Clear detail after transition
+    setTimeout(() => {
+      const detailEl = cardEl.querySelector('.card-detail');
+      if (detailEl && !target.expanded) detailEl.innerHTML = '';
+    }, 400);
+    const btn = cardEl.querySelector('.btn-expand');
+    if (btn) btn.textContent = 'Ver más ▼';
+    history.replaceState(null, '', window.location.pathname + window.location.search);
   }
 }
 
@@ -405,9 +433,15 @@ function init() {
   // Render combo opportunities
   renderCombos();
 
-  // Prevent card toggle when clicking links inside detail
+  // Card click delegation — toggle on card click, but not on links
   document.getElementById('cards-grid')?.addEventListener('click', e => {
-    if (e.target.tagName === 'A') e.stopPropagation();
+    // Don't toggle when clicking links
+    if (e.target.closest('a')) return;
+    // Find the card element
+    const card = e.target.closest('.card');
+    if (card && card.dataset.id) {
+      toggleCard(card.dataset.id);
+    }
   });
 
   // Initial render sorted by feasibility

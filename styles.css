@@ -393,6 +393,12 @@ img {
   overflow: hidden;
 }
 
+.card--expanded .card-summary-text {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
 .btn-expand {
   display: inline-flex;
   align-items: center;
